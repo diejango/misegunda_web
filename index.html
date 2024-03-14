@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página EGG</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/43405ecd2a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html"><i class='fa-solid fa-user fa-3x'></i></a>
+        <h1>Dia 6 - Paso 17 - ¡Definiendo el CSS!</h1>
+    </header>
+
+    <nav>
+        <button id="nav-toggle" style="background-color: #333; color: white;">☰</button>
+        <ul id="nav-menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="http://127.0.0.1:5500/css-modelo-de-cajas/cajas.html">Acerca de</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>    
+    <main id="Seccion-principal">
+        <section class='seccion-1'>
+            <div class="acerca-de">         
+                <div>
+                    <h2>Acerca de mí</h2>
+                    <p class="parrafo1">¡Mi segunda Web!</p>
+                    <p class="parrafo2">Yero es mi pastor nada me faltara.</p>
+                </div>
+                <img src="descarga.jpg" alt="Imagen Personal">
+            </div>
+        
+            <img src="hero-bg.jpg" alt="imagen de carrusel">
+        </section>
+        
+        <section>
+            <h2 class="titulo-trabajos">Juegos</h2>
+            <div class="trabajos">
+                <div class="tarjeta">
+                    <div>
+                        <img src="1.webp" alt="juego 1" style="width: 100%;height: 600px;">
+                        <h3>God of War 1</h3>
+                        <p>God of War es un videojuego de acción-aventura en tercera persona 
+                            desarrollado por SCE Santa Monica Studio y publicado por Sony Interactive 
+                            Entertainment. Su lanzamiento se produjo el 20 de abril de 2018 como un título
+                            exclusivo para la consola PlayStation 4.</p>
+                    </div>
+                    <a href="#" class="saber-mas">Saber más</a>
+                </div>
+                <div class="tarjeta">
+                    <div>
+                        <img src="2.jpg" alt="juego 2" style="width: 100%;height: 600px;">
+                        <h3>God of War 2</h3>
+                        <p>God of War II es un videojuego de acción y aventuras desarrollado 
+                            por Santa Monica Studio y publicado por Sony Computer Entertainment.</p>
+                    </div>
+                    <a href="#" class="saber-mas">Saber más</a>
+                </div>
+                <div class="tarjeta">
+                    <div>    
+                        <img src="3.webp" alt="juego 3" style="width: 100%;height: 600px;">
+                        <h3>God of War 3</h3>
+                        <p>God of War III es un videojuego de hack and slash de acción y aventura desarrollado por Santa Monica Studio
+                             y publicado por Sony Computer Entertainment. Lanzado por primera vez para la consola PlayStation 3 (PS3)
+                              el 16 de marzo de 2010, el juego es la quinta entrega de la serie God of War, la séptima cronológicamente
+                               y la última en la era griega de la franquicia, y la secuela de God of War II de 2007. Basado libremente 
+                               en la mitología griega, el juego se desarrolla en la antigua Grecia con la venganza como motivo central.</p>
+                    </div>
+                    <a href="#" class="saber-mas">Saber más</a>
+                </div>
+            </div>
+        </section>
+        
+
+    </main>
+
+    <footer>
+        <div class="formulario-contacto">
+            <h2>Contacta con nosotros</h2>
+            <form id="formulario-contacto">
+                <div class="campo-form">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="campo-form">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="campo-form">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        
+        <b>Redes sociales:</b>
+        <ul>
+            <li><a href="">Facebook</a><i class='fa-solid fa-anonymous'></i></li>
+            <li><a href="">Instagram</a></li>
+            <li><a href="">Linkedin</a></li>
+            <li><a href="">Github</a></li>
+        </ul>
+        <p>&copy; 2024 Diego Mantilla. Todos los derechos reservados.</p>
+
+    </footer>
+    <script>
+        
+    </script>
+</body>
+</html>

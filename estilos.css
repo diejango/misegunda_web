@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+i{
+    margin-bottom: 20px;
+    padding: 20px;
+    color: #ffffff;
+    display: inline-block;
+}
+.acerca-de {
+    display: flex;
+    align-items: flex-start; 
+    justify-content: center; 
+    max-width: 40%; 
+    margin: auto; 
+    margin-bottom: 20px;
+    margin-top: 20px;
+    
+}
+
+.acerca-de > div, .acerca-de > h2, .acerca-de > img {
+    flex: 1; 
+}
+
+.acerca-de > div {
+    flex-basis: 60%; 
+}
+
+.acerca-de > div > img {
+    flex-basis: 40%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+header, footer {
+    width: 100%;
+    background-color: #333;
+}
+
+
+body {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+header, section, footer {
+    padding: 20px; 
+}
+
+
+header {
+    background: #005a87;
+    color: #ffffff;
+
+}
+
+header h1 {
+    display: inline-block;
+    padding: 20px;
+}
+
+nav ul {
+    background: #333;
+    text-align: center;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #ffffff;
+    padding: 15px 20px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #ddd;
+    color: #333;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+footer{
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #333;
+    color: white;
+}
+footer
+a
+{
+    color: aliceblue;
+}
+footer
+a:hover
+{
+    color: blue;
+}
+footer
+p {
+    text-align: center;
+}
+footer
+b {
+    font-size: 30px;
+}
+
+
+.titulo-trabajos {
+    text-align: center;
+    font-size: 24px;
+}
+
+.trabajos {  
+    display: flex;
+    justify-content: space-around; 
+    padding: 20px;
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc(50% - 40px); 
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    overflow: hidden; 
+}
+
+.tarjeta div img {
+    width: 100%;
+    display: block;
+}
+
+.tarjeta div h3 {
+    font-size: 20px;
+    margin: 16px;
+}
+.tarjeta div p {
+    font-size: 14px;
+    margin: 16px;
+}
+
+.tarjeta .saber-mas {
+    display: block;
+    text-align: center;
+    background-color: #005a87;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    margin: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.tarjeta .saber-mas:hover {
+    background-color: #003d5b;
+}
+
+.tarjeta:hover {
+    transform: scale(1.05);
+}
+#nav-toggle {
+    display: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    font-size: 20px;
+    background-color: #333;
+    color: white;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    #nav-toggle {
+        display: block; 
+    }
+    
+    #nav-menu {
+        display: none; 
+        width: 100%; 
+    }
+    
+    #nav-menu li {
+        display: block;
+        text-align: center; 
+    }
+    
+    
+}
+
+@media (max-width: 600px) {
+    .acerca-de {
+        flex-direction: column;
+        text-align: center;
+        max-width: 70%;
+    }
+
+    .acerca-de > div, .acerca-de > img {
+        width: 100%;
+        padding-top: 20px;
+        margin: 0 auto;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .tarjeta {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .trabajos {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .acerca-de {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .tarjeta {
+        width: calc(50% - 40px);
+    }
+}
+
+@media (min-width: 1025px) {
+    .acerca-de {
+        max-width: 80%;
+    }
+
+    .trabajos {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 600px) {
+    #nav-toggle {
+        display: block;
+    }
+
+    #nav-menu {
+        display: none;
+    }
+
+    .menu.mostrar {
+        display: flex;
+    }
+}
+
+.formulario-contacto h2 {
+    color: #333;
+}
+
+.formulario-contacto label {
+    color: #666; 
+}
+
+.formulario-contacto {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.campo-form {
+    margin-bottom: 20px;
+}
+
+.campo-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.campo-form input, .campo-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.campo-form input:focus, .campo-form textarea:focus {
+    outline: none;
+    border-color: #005a87;
+}
+
+button[type="submit"] {
+    background-color: #005a87;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #003d5b;
+}
+
